@@ -10,7 +10,7 @@ import "./assets/all.scss"
 
 const app = createApp(App)
 
-// app.use(axios)
+app.use(axios)
 //app.use(VueAxios)
 app.use(router)
 app.mount('#app')
