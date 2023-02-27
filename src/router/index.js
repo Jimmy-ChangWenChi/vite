@@ -25,8 +25,26 @@ const routes = [
         path: 'cart',
         component: () => import('../views/front/CartView.vue')
       },
+      {
+        path: 'login',
+        component: () => import('../views/front/LoginView.vue')
+      },
     ]
   },
+  {
+    path:"/admin",
+    component: () => import('../views/DashboardView.vue'),
+    children:[
+      {
+        path: 'products',
+        component: () => import('../views/admin/adminProducts.vue')
+      },
+      {
+        path: 'orders',
+        component: () => import('../views/admin/adminOrders.vue')
+      },
+    ]
+  }
 ]
 
 const router = createRouter({
