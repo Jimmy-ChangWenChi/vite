@@ -7,27 +7,22 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'Home',
         component: () => import('../views/front/HomeView.vue')
       },
       {
         path: 'about',
-        name: 'About',
         component: () => import('../views/front/AboutView.vue')
       },
       {
         path: 'products',
-        name: '',
         component: () => import('../views/front/ProductsView.vue')
       },
       {
         path: 'product/:id',
-        name: '',
         component: () => import('../views/front/ProductView.vue')
       },
       {
         path: 'cart',
-        name: '',
         component: () => import('../views/front/CartView.vue')
       },
     ]

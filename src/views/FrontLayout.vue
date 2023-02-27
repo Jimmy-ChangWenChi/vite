@@ -5,13 +5,13 @@
     <router-link to="/products">產品頁面</router-link>  |
     <router-link to="/cart">購物車頁面</router-link>
     <hr>
-    <Router-view></Router-view>
+    <RouterView></RouterView>
 </template>
 
 <script>
 import { RouterView } from 'vue-router'
 
-export default{
+export default {
     components: {
         RouterView
     }
